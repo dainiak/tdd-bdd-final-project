@@ -1,1 +1,1 @@
-web: gunicorn --workers=1 --bind 0.0.0.0:$PORT --log-level=info service:app
+web: python -m flask run --app=service:app --host=0.0.0.0 --port=$PORT
